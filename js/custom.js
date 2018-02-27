@@ -34,3 +34,80 @@ function myFunction() {
 //    alert("已複製至剪貼簿: " + copyText.value);
     alert("已複製序號");
 }
+
+
+var inputField = document.getElementsByTagName("input");
+
+var selectField = document.getElementsByTagName("select");
+
+check(inputField);
+checkSelect(selectField);
+
+function validateSelect(sample, error) {
+  if (sample.value.length < 8 || sample.value == null) {
+
+    sample.classList.add("input-error");
+    error.classList.add("is-active");
+  } else {
+    error.classList.remove("is-active");
+    sample.classList.remove("input-error");
+  }
+}
+
+function check(inputToCheck) {
+  for (i = 0; i < inputToCheck.length; i++) {
+    inputToCheck[i].addEventListener(
+      "input",
+      function(event) {
+        validateInFocus(event.target, event.target.nextElementSibling);
+      },
+      true
+    );
+    inputToCheck[i].addEventListener('blur', function(event){
+       validateOutFocus(event.target, event.target.nextElementSibling);
+    })
+  };
+}
+
+function checkSelect(inputToCheck) {
+  for (i = 0; i < inputToCheck.length; i++) {
+    inputToCheck[i].addEventListener(
+      "input",
+      function(event) {
+        validateSelect(event.target, event.target.parentNode.nextElementSibling);
+      },
+      true
+    );
+  }
+}
+//
+//function validateInFocus(element, sibling) {
+// element.classList.remove("input-error");
+// sibling.classList.remove("input-error-message");
+//  if (element.value == "" || element.value == null) {
+//    sibling.classList.add("input-assist-message", "is-active");
+//    element.classList.add("input-assist");
+//  } else if (element.value.length<8) {
+//    sibling.classList.add("input-assist-message", "is-active");
+//    element.classList.add("input-assist");
+//  } else {
+//    sibling.classList.remove("is-active");
+//    element.classList.remove("input-assist");
+//  }
+//}
+//
+//function validateOutFocus(element, sibling) {
+//  element.classList.remove("input-assist");
+//  if (element.value == "" || element.value == null) {
+//    sibling.classList.remove("input-assist-message");
+//      sibling.classList.add("input-error-message", "is-active");
+//      element.classList.add("input-error");
+//    } else if (element.value.length<8) {
+//      sibling.classList.remove("input-assist-message");
+//      sibling.classList.add("input-error-message", "is-active");
+//      element.classList.add("input-error");
+//    } else {
+//      sibling.classList.remove("input-error-message", "is-active");
+//      element.classList.remove("input-error");
+//    }
+//}

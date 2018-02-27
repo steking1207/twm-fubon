@@ -13,7 +13,6 @@
 <body>
 
 <section id="frameHeader"></section>
-
     <!-- KV -->
     <div class="container-fluid px-0">
         <div class="row">
@@ -69,10 +68,21 @@
                     </div>
                     <form method="post" class="d-inline-block" id="sn">
                         <div class="form-group m-0">
-                            <input class="input-sn" type="number" id="txtboxToFilter" name="textbox" minlength="12" maxlength="12" placeholder="請輸入富邦產險交易序號" required><button class="btn-submit px-4" type="submit" name="submit">
+                            <input class="input-sn" type="text" id="txtboxToFilter" name="textbox" minlength="12" maxlength="12" placeholder="請輸入富邦產險交易序號" required pattern="[0-9]{12}"><button class="btn-submit px-4" type="submit" name="submit">
                                 <img class="" src="images/btn-submit.png" srcset="images/btn-submit@2x.png 2x" alt="確認送出">
                             </button>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
                     </form>
                 </div>
                 <div class="col-12 py-10" id="coupon" style="display: none;">
@@ -104,14 +114,14 @@
                                     <img class="mr-3" src="images/coupon-icon1.png" srcset="images/coupon-icon1@2x.png 2x" alt="">
                                     <div class="media-body align-self-center">
                                         <img src="images/coupon-step1.png" srcset="images/coupon-step1@2x.png 2x" alt="STEP1">
-                                        <div class="h6 mt-3">請先登入/註冊為台灣大會員</div>
+                                        <div class="h6 mt-3">請先 <a href="">登入/註冊為台灣大會員</a></div>
                                     </div>
                                 </div>
                                 <div class="media my-1">
                                     <img class="mr-3" src="images/coupon-icon2.png" srcset="images/coupon-icon2@2x.png 2x" alt="">
                                     <div class="media-body align-self-center">
                                         <img src="images/coupon-step2.png" srcset="images/coupon-step2@2x.png 2x" alt="STEP2">
-                                        <div class="h6 mt-3">前往登錄漫遊優惠，輸入漫遊優惠序號。</div>
+                                        <div class="h6 mt-3">前往<a href="">登錄漫遊優惠</a>，輸入漫遊優惠序號。</div>
                                         <div class="">(優惠使用期限為序號登錄後90天內有效)</div>
                                     </div>
                                 </div>
@@ -150,10 +160,10 @@
                         登錄漫遊上網吃到飽88折優惠序號
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-7 text-gray">
+                        <div class="col-12 col-md-7 text-gray lead">
                             活動辦法：符合活動對象之用戶於登記期間登記成功，即享中國/香港/澳門、日本/韓國/新加坡/馬來西亞/印尼/菲律賓/泰國漫遊上網吃到飽88折優惠資格(每個門號限登記一次，限選一個國家)。用戶需自行預約及開通漫遊服務並於優惠使用期限前使用完畢，逾期視為放棄，不得要求優惠遞延或優惠轉讓給他人使用。
                         </div>
-                        <div class="col-12 col-md-5 text-gray">
+                        <div class="col-12 col-md-5 text-gray lead">
                             優惠序號登錄時間：2018年06月30日前登錄完畢<br>
                             優惠使用期間：優惠序號登錄後90天內有效<br>
                             活動對象：台灣大哥大用戶
@@ -163,7 +173,7 @@
                     <div class="h5 font-weight-bold mt-8">
                         優惠適用產品
                     </div>
-                    <div class="text-gray">
+                    <div class="text-gray lead">
                         適用中國/香港/澳門漫遊上網吃到飽產品：漫遊上網吃到飽_5-10日型<br>
                         適用日本/韓國/新加坡/馬來西亞/印尼/菲律賓/泰國漫遊上網吃到飽產品：漫遊上網吃到飽_4-7日型
                     </div>
@@ -171,7 +181,7 @@
                     <div class="h5 font-weight-bold mt-8">
                         使用說明
                     </div>
-                    <div class="text-gray">
+                    <div class="text-gray lead">
                         請於登錄優惠序號後，透過以下任一管道預約/開通漫遊服務
                         <div class="row justify-content-center mt-4">
                             <div class="col-md-auto col-sm-4 col-6 text-center mt-3">
@@ -195,7 +205,7 @@
                     <div class="h5 font-weight-bold mt-8">
                         優惠使用範例
                     </div>
-                    <div class="text-gray">
+                    <div class="text-gray lead">
                         範例A：林小姐為富邦產險投保保戶，獲得漫遊上網吃到飽88折優惠券序號並完成優惠券登錄，於登錄後90天內在官網預約日本【漫遊上網吃到飽_4-7日型】預約5天(2018/3/10~2018/3/15)，原收費$199*5天=$995，出帳單時系統會直接啟動88折優惠，因此林小姐只要支付$199*5天*88%=$876的費用即可。<br>
                         註：此範例僅供參考，實際收費一律以帳單為準。<br>
                         範例B：陳先生成功登錄上網吃到飽88折優惠，但之後辦理門號過戶，因門號已非陳先生使用，因此等同放棄上網吃到飽88折優惠。
@@ -204,7 +214,7 @@
                     <div class="h5 font-weight-bold mt-8">
                         貼心提醒
                     </div>
-                    <div class="text-gray">
+                    <div class="text-gray lead">
                         <ol class="pl-3 mb-0" style="list-style-type:decimal;">
                             <li>
                                 本活動限台灣大哥大3G、4G月租型用戶登錄。登錄及使用優惠時均需為台灣大哥大正常使用中用戶，停話、掛失、或於登錄/使用截止日前辦理退租/一退一租/過戶/攜碼/被銷號等狀態皆不適用此優惠服務。限制條件及相關資格判定以台灣大哥大系統記錄為準。

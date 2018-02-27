@@ -1,5 +1,22 @@
 # https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
-# Example .gitignore files: https://github.com/github/gitignore
+# Example.gitignore files : https://github.com/github/gitignore
+_notes/
 /bower_components/
 /node_modules/
+
+.gitignore
+.sass-cache/*
+_*
+/_notes/*
+src/
+_test/*
+web/.sass-cache/*
+assets/_scss/*
+config.rb
+dwsync.xml
+Capfile
+CHANGELOG
+Gemfile
+Guardfile
+doc/*

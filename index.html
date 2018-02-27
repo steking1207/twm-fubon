@@ -68,23 +68,15 @@
                     <div class="d-block mb-7">
                         <img class="img-fluid" src="images/title-sn.png" srcset="images/title-sn@2x.png 2x" alt="優惠序號">
                     </div>
-                    <form method="post" class="d-inline-block" id="sn">
+                    <form method="get" class="d-inline-block" id="sn">
                         <div class="form-group m-0">
-                            <input class="input-sn" type="text" id="txtboxToFilter" name="textbox" minlength="12" maxlength="12" placeholder="請輸入富邦產險交易序號" required pattern="[0-9]{12}" title="請輸入正確交易序號，謝謝"><button class="btn-submit px-4" type="submit" name="submit">
+                            <input class="input-sn" type="text" id="input_sn" name="input_sn" minlength="12" maxlength="12" placeholder="請輸入富邦產險交易序號" required pattern="[0-9]{12}" title="請輸入正確交易序號，謝謝"><button class="btn-submit px-4" type="submit" name="submit">
                                 <img class="" src="images/btn-submit.png" srcset="images/btn-submit@2x.png 2x" alt="確認送出">
                             </button>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
+                        <div class="error mt-3" style="display: none;">
+                            <img class="" src="images/icon-alert.png" srcset="images/icon-alert@2x.png 2x" alt="">
+                        </div>
                     </form>
                 </div>
                 <div class="col-12 py-10" id="coupon" style="display: none;">
@@ -245,6 +237,8 @@
         </div>
     </div>
 
+    <script src="js/vendor/jquery.validate.min.js"></script>
     <script src="js/custom.js"></script>
+
 </body>
 </html>

@@ -16,17 +16,21 @@
     <meta content="zh_TW" property="og:locale">
     <link rel="image_src" href="images/og-image.jpg">
 
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+<!--    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">-->
 
     <!-- event -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap-custom.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all">
-    <script src="js/vendor/jquery.min.js"></script>
+<!--    <script src="js/vendor/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
 </head>
 
 <body>
 
 <section id="frameHeader"></section>
+
+    <section id="containerBox">
     <!-- KV -->
     <div class="container-fluid">
         <div class="row">
@@ -277,24 +281,37 @@
 
     <!-- Modal -->
     <div class="modal fade" id="modal-rule4" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <img class="img-fluid" src="images/rule4.png" alt="">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-lg vertical-align-center" role="document">
+                <div class="modal-content modal-lg">
+                    <div class="modal-body text-center">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img class="img-fluid" src="images/rule4.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="modal-rule5" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <img class="img-fluid" src="images/rule5.png" alt="">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-lg vertical-align-center" role="document">
+                <div class="modal-content modal-lg">
+                    <div class="modal-body text-center">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img class="img-fluid" src="images/rule5.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
+    </section>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.validate.min.js"></script>
     <script src="js/custom.js"></script>
